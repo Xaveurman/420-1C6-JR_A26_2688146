@@ -394,4 +394,5 @@ int main()
 #pragma endregion
 
     // TODO: Faire le Devoir à la maison
+    // Xavier Blanchette 2688146 : Modification de la Maison 2026-08-22
 }
