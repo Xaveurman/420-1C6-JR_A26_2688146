@@ -5,4 +5,5 @@
   </Configurations>
   <Project Path="Cours01_Introduction/Cours01_Introduction.vcxproj" Id="38b9b7d6-4001-4987-a2ed-6f76eda823d2" />
   <Project Path="Cours02_git/Cours02_git.vcxproj" Id="16c90d18-95de-4581-9fb5-5eec870000d1" />
+  <Project Path="cours03/cours03.vcxproj" Id="59e5710a-ea01-454c-acba-684d9e9e2d45" />
 </Solution>
