@@ -448,7 +448,62 @@ int main()
 	// TODO: Faire le premier exercice du Devoir ensemble
 
 
+
+	// *** Exercice 01 *** 
+	// Moyenne de 3 nombres
+	double moyenne3Nombres = (81.42 + -24.2 + 65.142) / 3
+		std::cour << "Moyenne des 3 nombres : " << moyenne3Nombres << "\n\n";
+
+
+
+
 	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
 
+
+
+
+
+
+
+
+	// Exercice 6 
+// Correction d’un programme 
+
+// Calcul du volume du cylindre 
+	double r = 5;
+	hauteur = 10;
+	double vlm_cyl = 3.14159 * r * r * hauteur
+
+		cout << "Le volume du cylindre est : " + vlm_cyl;
+
+	// Calcul du prix total du cylindre par volume 
+
+	double prix = 12, 99;
+
+	total = vlm_cyl * prix;
+
+
+	std::cout << "Le prix total est : " + total)
+
+	// Conversion de température 
+	string farenheit = 75;
+	string cel = farenheit - 32) * 5 / 9;
+
+	std::cout << farenheit << ' degrés Fahrenheit équivalent à ' << cel << ' degrés Celsius';
+
+	// Calcul de l'âge en jours 
+	int année = 25;
+	int MOIS = 3
+		jrs = année * 365 + MOIS * 30;
+
+	std::cout << "Age en jours : " jrs;
+
+	// Calcul de l'aire d'un triangle 
+	double BaseDuTriangle = 8;
+	double HauteurDuTriangle = 6;
+
+	int total = (BaseDuTriangle * HauteurDuTriangle) / 2;
+
+	std::cout << "L'aire du triangle est : " + a)
 
 } // Fin de la fonction main(), attention de ne pas supprimer
