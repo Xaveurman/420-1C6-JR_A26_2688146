@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5aaf8c73-47a8-4242-89c0-8abaa777fc6b}</ProjectGuid>
-    <RootNamespace>cours04enterSorties</RootNamespace>
+    <ProjectGuid>{1d61eaf4-1daa-4204-af11-c370973b4020}</ProjectGuid>
+    <RootNamespace>Cours04Devoir</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,7 +139,7 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cours04_enterSorties.cpp" />
+    <ClCompile Include="Cours04_Devoir.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

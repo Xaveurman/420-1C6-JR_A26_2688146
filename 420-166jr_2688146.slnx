@@ -6,4 +6,6 @@
   <Project Path="Cours01_Introduction/Cours01_Introduction.vcxproj" Id="38b9b7d6-4001-4987-a2ed-6f76eda823d2" />
   <Project Path="Cours02_git/Cours02_git.vcxproj" Id="16c90d18-95de-4581-9fb5-5eec870000d1" />
   <Project Path="cours03/cours03.vcxproj" Id="59e5710a-ea01-454c-acba-684d9e9e2d45" />
+  <Project Path="Cours04_Devoir/Cours04_Devoir.vcxproj" Id="1d61eaf4-1daa-4204-af11-c370973b4020" />
+  <Project Path="cours04_enterSorties/cours04_enterSorties.vcxproj" Id="5aaf8c73-47a8-4242-89c0-8abaa777fc6b" />
 </Solution>
