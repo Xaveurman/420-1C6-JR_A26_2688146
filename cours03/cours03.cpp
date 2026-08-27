@@ -451,59 +451,84 @@ int main()
 
 	// *** Exercice 01 *** 
 	// Moyenne de 3 nombres
-	double moyenne3Nombres = (81.42 + -24.2 + 65.142) / 3
-		std::cour << "Moyenne des 3 nombres : " << moyenne3Nombres << "\n\n";
+	double moyenne3Nombres = (81.42 + -24.2 + 65.142) / 3;
+	std::cout << "Moyenne des 3 nombres : " << moyenne3Nombres << "\n\n";
+
+	// *** Exercice 02 *** 
+	// Calcule d'un périmètre et l'aire d'un rectangle
+	int perimetreRectangle = ((12 * 2) + (7 * 2));
+
+	// *** Exercice 03 *** 
+	// Calculer le volume d'une sphère de rayon 6 unités. >
+	double rayonshere = 2;
+	 double volumeCercle = 4.00 / 3.00 * 3.14 * rayonshere * rayonshere * rayonshere ;
+	 std::cout << "Volume d'un Cercle avec un rayon de 2" << volumeCercle << "\n";
+
+		// *** Exercice 04 *** 
+	//Convertir 100 pouces en centimètres (1 pouce = 2.54 cm), puis convertissez le résultat en mètres.
+
+	int grandeurPouces = 100;
+	double grandeurCentimetres = grandeurPouces * 2.5;
+	double grandeurmetres = grandeurCentimetres / 100;
+
+	std::cout << "grandeur en pouces =" << grandeurPouces << "grandeur en centimetre = " << grandeurCentimetres << "grandeur metre = " << grandeurmetres << "\n";
+
+	// *** Exercice 05 *** 
+	// Calculer le BMI
+	double poidsPersonne = 160 / 2.2;
+	double taillePersonneMetre = 1.75;
+	double BMI = poidsPersonne / taillePersonneMetre * taillePersonneMetre;
+		std::cout << "le BMI de la personne est :" << BMI << "\n";
+
+
+
+		// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
 
 
 
 
-	// TODO: Faire le reste du Devoir et remettre avant la date sur Léa
 
 
 
 
+		// Exercice 6 
+	// Correction d’un programme 
 
+	// Calcul du volume du cylindre 
+		int rayon = 5;
+	int hauteur = 10;
+	double volumeCylindre = 3.14159 * rayon * rayon * hauteur;
 
-
-
-	// Exercice 6 
-// Correction d’un programme 
-
-// Calcul du volume du cylindre 
-	double r = 5;
-	hauteur = 10;
-	double vlm_cyl = 3.14159 * r * r * hauteur
-
-		cout << "Le volume du cylindre est : " + vlm_cyl;
+	std::cout << "Le volume du cylindre est : " << volumeCylindre << "\n";
 
 	// Calcul du prix total du cylindre par volume 
 
-	double prix = 12, 99;
+	double prixCylindre = 12.99;
 
-	total = vlm_cyl * prix;
+	double prixTotal = volumeCylindre * prixCylindre;
 
 
-	std::cout << "Le prix total est : " + total)
+	std::cout << "Le prix total est : " << total << "\n";
 
 	// Conversion de température 
-	string farenheit = 75;
-	string cel = farenheit - 32) * 5 / 9;
+	double farenheit = 75;
+	double celcius = ( farenheit - 32 ) * 5 / 9;
 
-	std::cout << farenheit << ' degrés Fahrenheit équivalent à ' << cel << ' degrés Celsius';
+	std::cout << farenheit << " degres Fahrenheit equivalent a " << celcius << " degres Celsius" "\n";
 
 	// Calcul de l'âge en jours 
-	int année = 25;
-	int MOIS = 3
-		jrs = année * 365 + MOIS * 30;
+	int annee = 25;
+	int mois = 3;
+	double jours = annee * 365 + mois * 30;
 
-	std::cout << "Age en jours : " jrs;
+	std::cout <<  "Age en jours = " << jours <<"\n";
 
 	// Calcul de l'aire d'un triangle 
 	double BaseDuTriangle = 8;
 	double HauteurDuTriangle = 6;
 
-	int total = (BaseDuTriangle * HauteurDuTriangle) / 2;
+	int airTotalTriangle = (BaseDuTriangle * HauteurDuTriangle) / 2;
 
-	std::cout << "L'aire du triangle est : " + a)
+	std::cout <<  "L'aire du triangle est : " << airTotalTriangle << "\n";
 
 } // Fin de la fonction main(), attention de ne pas supprimer
