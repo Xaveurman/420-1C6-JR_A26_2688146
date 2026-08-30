@@ -13,53 +13,54 @@ using namespace std;
 
 int main()
 {
-	cout << "Entrer la largeur du rectangle : "
+
+	cout << "Entrer la largeur du rectangle : ";
 		int largeurRectangle;
-	cin << largeur;
+	cin >> largeurRectangle;
 
 	cout << "Entrer la hauteur du rectangle : ";
-	string haut_rectangle;
-	cin >> haut_rectangle;
+		int hauteurRectangle;
+	cin >> hauteurRectangle;
 
 	if (largeurRectangle <= 0)
 	{
-		cout << "Erreur : largeur ne peut être 0 ou négative.";
+		cout << format( "Erreur : largeur ne peut être 0 ou négative.");
 	}
-	else (haut_rectangle <= 0)
+	if (hauteurRectangle <= 0)
 	{
-		cout "Erreur : hauteur ne peut être 0 ou négative.";
+		cout << format( "Erreur : hauteur ne peut être 0 ou négative.");
+	}
 
-
-else if (largeurRectangle == haut_rectangle)
+else if (largeurRectangle == hauteurRectangle)
 {
-	cout << format("Carré {} par {}\n", largeurRectangle);
+	cout << format("Carré {} par {}\n", largeurRectangle, hauteurRectangle);
 }
-else if (largeurRectangle > haut_rectangle) {
-	cout << format("Rectangle {} par {}\n, largeurRectangle haut_rectangle); 
+else if (largeurRectangle > hauteurRectangle)
 
-		double ratioHauteur = largeurRectangle / haut_rectangle;
+{
+	cout << format("Rectangle {} par {}\n", largeurRectangle, hauteurRectangle); 
+
+		double ratioHauteur = largeurRectangle / hauteurRectangle;
 
 
-	cout << format("{:3.f} % plus large que haut\n", ratioHauteur);
+	cout << format("{:.3f} % plus large que haut\n", ratioHauteur);
 
 }
 else
-cout << format("Rectangle {} par {}\n", largeurRectangle, haut_rectangle);
-cout << "Plus haut que large\n";
+cout << format("Rectangle {} par {}\n", largeurRectangle, hauteurRectangle);
+cout << format("Plus haut que large\n");
 
 
-Ratio = haut_rectangle / largeur;
+double ratioHauteur = hauteurRectangle / largeurRectangle ;
 
 
-cout << format("{:.3f} % plus haut que large\n", Ratio);
-	}
+cout << format("{:.3f} % plus haut que large\n", ratioHauteur);
 
-	double a = largeurRectangle * haut_rectangle;
-	double PERIMÈTRE = 2 * (largeurRectangle + haut_rectangle)
+	double aire = largeurRectangle * hauteurRectangle;
+	double Perimetre = 2 * (largeurRectangle + hauteurRectangle);
 
+		cout << format("Aire : {:.2f}\n", aire);
+	cout << format("Perimètre : {:.2f}\n", Perimetre);
 
-		cout << format("Aire : {:.2f}\n", a);
-	cout << format("Perimètre : {:.2f}\n", PERIMÈTRE);
-
-	system("pause"); 			system("cls";
+	system("pause"); 			system("cls");
 }
