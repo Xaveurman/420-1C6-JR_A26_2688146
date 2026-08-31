@@ -9,5 +9,6 @@
   <Project Path="Cours04_Devoir/Cours04_Devoir.vcxproj" Id="1d61eaf4-1daa-4204-af11-c370973b4020" />
   <Project Path="cours04_enterSorties/cours04_enterSorties.vcxproj" Id="5aaf8c73-47a8-4242-89c0-8abaa777fc6b" />
   <Project Path="cours05/cours05.vcxproj" Id="af794564-7a49-4885-b6b9-4cba8a7e0c18" />
+  <Project Path="Cours06_conditions/Cours06_conditions.vcxproj" Id="95b36950-6157-43b4-95f3-aa4fe6fcd299" />
   <Project Path="devoir05/devoir05.vcxproj" Id="b6610d1c-c2b6-465b-b577-dd1756610843" />
 </Solution>
