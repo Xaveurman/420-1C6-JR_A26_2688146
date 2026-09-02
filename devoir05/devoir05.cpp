@@ -63,4 +63,135 @@ cout << format("{:.3f} % plus haut que large\n", ratioHauteur);
 	cout << format("Perimètre : {:.2f}\n", Perimetre);
 
 	system("pause"); 			system("cls");
+
+	cout << "Entrer le premier nombre :";
+	double nombre1;
+	cin >> nombre1;
+
+	cout << "Entrer le premier nombre :";
+	double nombre2;
+	cin >> nombre2;
+
+	if (nombre1 == nombre2)
+	{
+		cout << format("Nombre {:.3f} et {:.3f} sont égaux\n",nombre1 ,nombre2);
+	}
+
+	else if (nombre1 > nombre2)
+	{
+		double differenceNombre1 = nombre1 - nombre2;
+	cout << format("Nombre {:.3f} et {:.3f} sont differents de {:.3f}\n",nombre1, nombre2 , differenceNombre1);
+	}
+
+	else if (nombre2 < nombre1)
+	{
+		double differenceNombre2 = nombre2 - nombre1;
+		("Nombre {:.3f} et {:.3f} sont differents de {:.3f}\n", nombre1, nombre2, differenceNombre2);
+	}
+	else 
+	{
+		cout << format("Erreur");
+	}
+	
+
+	cout << "Entrer le courriel :";
+	double couriel;
+	cin >> couriel;
+
+	cout << "Confirmer le courriel";
+	double courielConfirme;
+	cin >> courielConfirme;
+
+	if (couriel == courielConfirme)
+	{
+		cout << "Entrer le mot de passe";
+		double motDePasse;
+		cin >> motDePasse;
+
+		cout << "Confirmer le mot de passe";
+		double motDePasseConfirme;
+		cin >> motDePasseConfirme;
+
+		if (motDePasseConfirme == motDePasse)
+		{	
+			cout << format("Succès : nouveau compte compte ### a été créé !");
+		}
+		else if (motDePasseConfirme != motDePasse)
+		{
+			cout << format("Erreur : mots de passe différents, création du compte annulée.");
+		}
+	}
+	
+	else if (couriel == courielConfirme)
+	{
+		cout << format("Erreur : courriels différents, création du compte annulée.");
+	}
+
+	cout << "Nombre de billets achetes : ";
+	double personne;
+	cin >> personne;
+
+	double coutBillet = personne * 29.99;
+
+	if (personne < 20)
+	{
+		cout << format("Aucun rabais\n\n");
+		double rabais = 0;
+		double total = coutBillet + rabais;
+
+		cout << format("Sous-total : {:.2f} $\n", coutBillet);
+		cout << format("Rabais : 0%\n", rabais);
+		cout << format("Total : {:.2f} $\n", total);
+	}
+	else if (personne > 50)
+	{
+		cout << format("25 % de rabais\n\n");
+
+		double rabais = coutBillet * 0.25;
+		double total = coutBillet + rabais;
+
+
+		cout << format("Sous-total : {:.2f} $\n", coutBillet);
+		cout << format("Rabais : 25%\n", rabais);
+		cout << format("Total : {:.2f} $\n", total);
+	}
+
+	else if (personne > 20)
+	{
+		cout << format("10 % de rabais\n\n");
+		double rabais = coutBillet * 0.50;
+		double total = coutBillet + rabais;
+
+		cout << format("Sous-total : {:.2f} $\n", coutBillet);
+		cout << format("Rabais : 10%\n", rabais);
+		cout << format("Total : {:.2f} $\n", total);
+	}
+
+	cout << "Entrer le total de la facture originale  : ";
+	double totalFacture;
+	cin >> totalFacture;
+
+	cout << "Entrer le nombre de jours avant l’événement :";
+	double joursAvantEvent;
+	cin >> joursAvantEvent;
+
+
+	if (joursAvantEvent < 0)
+	{
+		cout << format("lil bro n'aura pas son remboursement");
+	}
+	else if (joursAvantEvent > 7)
+	{
+		cout << format("remboursement 100 %");
+	}
+	else if (joursAvantEvent >= 5)
+	{
+		cout << format("remboursement 50 %");
+	}
+	else if (joursAvantEvent < 5)
+	{
+		cout << format("remboursement 10% par jour avant l'événement");
+	}
+
+
 }
