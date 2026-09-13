@@ -38,23 +38,21 @@ int main()
 
 	// Exercice 2
 
-
-
 	cout << "Entrer la valeur A : ";
-	double acalcule;
-	cin >> acalcule;
+	double aCalcule;
+	cin >> aCalcule;
 
 	cout << "Entrer la valeur B : ";
-	double bcalcule;
-	cin >> bcalcule;
+	double bCalcule;
+	cin >> bCalcule;
 
 	cout << "Entrer la valeur C : ";
-	double ccalcule;
-	cin >> ccalcule;
+	double cCalcule;
+	cin >> cCalcule;
 
-	double formule = (acalcule * acalcule * acalcule) + (bcalcule * bcalcule) + ccalcule;
+	double formule = (aCalcule * aCalcule * aCalcule) + (bCalcule * bCalcule) + cCalcule;
 
-	cout << format("resultats formule {:.1f}^3 + {:.1f}^2 + {:.1f} = {:.2f}\n", acalcule, bcalcule, ccalcule, formule);
+	cout << format("resultats formule {:.1f}^3 + {:.1f}^2 + {:.1f} = {:.2f}\n", aCalcule, bCalcule, cCalcule, formule);
 
 	// Exercice 3
 
@@ -102,9 +100,6 @@ int main()
 	double quantiteArticle3;
 	cin >> quantiteArticle3;
 
-
-
-
 	cout << format("\n\nNumero de facture : {} \n", numeroFacture);
 	cout << format("Nom du client : {} \n\n\n", nomclient);
 	
@@ -113,22 +108,22 @@ int main()
 	double sousTotalArticle3 = coutArticle3 * quantiteArticle3;
 
 	cout << format("Nom de l'article	Cout		Quantite	sous-total \n");
-	cout << format("{}			{:.2f}		{}			{:.2f} \n\n", nomArticle1, coutArticle1, quantiteArticle1, sousTotalArticle1);
-	cout << format("{}			{:.2f}		{}			{:.2f} \n\n", nomArticle2, coutArticle2, quantiteArticle2, sousTotalArticle2);
-	cout << format("{}			{:.2f}		{}			{:.2f} \n\n", nomArticle3, coutArticle3, quantiteArticle3, sousTotalArticle3);
+	cout << format("{}			{:.2f} $	  {}		{:.2f} \n\n", nomArticle1, coutArticle1, quantiteArticle1, sousTotalArticle1);
+	cout << format("{}			{:.2f} $	  {}		{:.2f} \n\n", nomArticle2, coutArticle2, quantiteArticle2, sousTotalArticle2);
+	cout << format("{}			{:.2f} $	  {}		{:.2f} \n\n", nomArticle3, coutArticle3, quantiteArticle3, sousTotalArticle3);
 
 	double sousTotal = sousTotalArticle1 + sousTotalArticle2 + sousTotalArticle3;
 
-	cout << format("sous-total {:.2f} \n\n\n", sousTotal);
+	cout << format("sous-total {:.2f}$ \n\n\n", sousTotal);
 
 	double tps = sousTotal * 0.05;
 	double tvq = sousTotal * 0.09975;
 
-	cout << format("TPS :9.975 %		{:.2f}\n", tps);
-	cout << format("TVQ :5.000 %		{:.2f}\n\n\n", tvq);
+	cout << format("TPS :9.975 %		{:.2f} $\n", tps);
+	cout << format("TVQ :5.000 %		{:.2f} $\n\n\n", tvq);
 
 	double total = tps + tvq + sousTotal;
-
-	cout << format("Total {:.2f} \n\n\n", total);
+	
+	cout << format("Total {:.2f} $ \n\n\n", total);
 
 }
