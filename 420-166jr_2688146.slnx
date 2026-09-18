@@ -3,6 +3,7 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="cours 08/cours 08.vcxproj" Id="15341e6a-f932-4a4c-bece-5a96391ea419" />
   <Project Path="Cours01_Introduction/Cours01_Introduction.vcxproj" Id="38b9b7d6-4001-4987-a2ed-6f76eda823d2" />
   <Project Path="Cours02_git/Cours02_git.vcxproj" Id="16c90d18-95de-4581-9fb5-5eec870000d1" />
   <Project Path="cours03/cours03.vcxproj" Id="59e5710a-ea01-454c-acba-684d9e9e2d45" />
@@ -10,5 +11,10 @@
   <Project Path="cours04_enterSorties/cours04_enterSorties.vcxproj" Id="5aaf8c73-47a8-4242-89c0-8abaa777fc6b" />
   <Project Path="cours05/cours05.vcxproj" Id="af794564-7a49-4885-b6b9-4cba8a7e0c18" />
   <Project Path="Cours06_conditions/Cours06_conditions.vcxproj" Id="95b36950-6157-43b4-95f3-aa4fe6fcd299" />
+  <Project Path="cours07/cours07.vcxproj" Id="82a382aa-95b3-4711-b905-e0ddef4059fc" />
+  <Project Path="cours08/cours08.vcxproj" Id="99bc0262-781a-4753-bdb8-1268215e15bb" />
+  <Project Path="devoir 07/devoir 07.vcxproj" Id="ef2833c0-5405-4b29-98f4-84f7ffa3d54a" />
   <Project Path="devoir05/devoir05.vcxproj" Id="b6610d1c-c2b6-465b-b577-dd1756610843" />
+  <Project Path="devoir06/devoir06.vcxproj" Id="96cdeb02-83d2-484a-92d7-19d0ee1b302b" />
+  <Project Path="Imprimante TP/Imprimante TP.vcxproj" Id="4c6023e7-2a10-4829-91f9-cdcb15786e20" />
 </Solution>
