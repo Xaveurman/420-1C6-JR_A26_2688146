@@ -226,7 +226,7 @@ int main()
 	{
 		cout << "--- Lire un nombre ---\n\n";
 
-		cout << "Entter un nombre :";
+		cout << "Entrer un nombre :";
 		int nombre;
 		cin >> nombre;
 		while (cin.fail()) //true => erreur de lecture
