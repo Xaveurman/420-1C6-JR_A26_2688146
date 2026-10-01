@@ -73,18 +73,30 @@ int main()
 				break;
 
 			case '-':
+				cout << "Entrer un nombre : ";
+				cin >> nombre;
+				resultat -= nombre;
 				doitRecommencerChoix = false;
 				break;
 				
 			case '*':
+				cout << "Entrer un nombre : ";
+				cin >> nombre;
+				resultat *= nombre;
 				doitRecommencerChoix = false;
 				break;
 
 			case '/':
+				cout << "Entrer un nombre : ";
+				cin >> nombre;
+				resultat /= nombre;
 				doitRecommencerChoix = false;
 				break;
 
 			case '^':
+				cout << "Entrer un nombre : ";
+				cin >> nombre;
+				resultat = nombre; // A FAIRE
 				doitRecommencerChoix = false;
 				break;
 
