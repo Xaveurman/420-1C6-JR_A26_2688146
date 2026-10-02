@@ -19,8 +19,9 @@ int main()
 	setlocale(LC_ALL, "fr_CA.UTF-8");
 	double nombre = 0;
 	double resultat = 0;
+	string message = "";
+	double ancienResultat;
 
-		
 	while (resultat != 'q')
 	{
 		// Affichage de l'en-tête
@@ -28,7 +29,8 @@ int main()
 		cout << "*                     Imprimerie CSTJ                     *\n";
 		cout << "*           Par Votre Xavier Blanchette (2688146)         *\n";
 		cout << "***********************************************************\n";
-
+		
+		cout << format("Opération :   {} = \n\n", nombre);
 		cout << format("Résultat : {} \n\n", resultat);
 
 		cout << "+) Addition\n";
@@ -44,6 +46,7 @@ int main()
 		cout << "t) Triangle\n\n";
 
 		cout << "q) Quitter\n\n";
+		message == "";
 
 		bool doitRecommencerChoix = true;
 		while (doitRecommencerChoix == true) //
@@ -66,15 +69,44 @@ int main()
 			switch (choixMenu)
 			{
 			case '+':
+
+				// Lire un nombre valide
 				cout << "Entrer un nombre : ";
 				cin >> nombre;
+				
+				
+				while (cin.fail()) //true => erreur de lecture
+				{
+					cin.clear(); // cin.fail() = false
+					cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+					cout << "Erreur : entrer un nombre entier.\n";
+						
+					cout << "Entrer un nombre : ";
+					cin >> nombre;
+				}
+
+				// Calculer le nouveau résultat avec le nombre valide
+				
+				resultat = ancienResultat;
 				resultat += nombre;
+
 				doitRecommencerChoix = false;
 				break;
 
 			case '-':
 				cout << "Entrer un nombre : ";
 				cin >> nombre;
+				while (cin.fail()) //true => erreur de lecture
+				{
+					cin.clear(); // cin.fail() = false
+					cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+					cout << "Erreur : entrer un nombre entier.\n";
+
+					cout << "Entrer un nombre : ";
+					cin >> nombre;
+				}
 				resultat -= nombre;
 				doitRecommencerChoix = false;
 				break;
@@ -82,21 +114,50 @@ int main()
 			case '*':
 				cout << "Entrer un nombre : ";
 				cin >> nombre;
+				while (cin.fail()) //true => erreur de lecture
+				{
+					cin.clear(); // cin.fail() = false
+					cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+					cout << "Erreur : entrer un nombre entier.\n";
+
+					cout << "Entrer un nombre : ";
+					cin >> nombre;
+				}
 				resultat *= nombre;
 				doitRecommencerChoix = false;
 				break;
 
 			case '/':
 				cout << "Entrer un nombre : ";
+				while (cin.fail()) //true => erreur de lecture
+				{
+					cin.clear(); // cin.fail() = false
+					cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+					cout << "Erreur : entrer un nombre entier.\n";
+
+					cout << "Entrer un nombre : ";
+					cin >> nombre;
+				}
 				cin >> nombre;
+				if (nombre == 0)
+				{
+					cout << "Erreur\n";
+					doitRecommencerChoix = false;
+				}
+				else
+				{
 				resultat /= nombre;
 				doitRecommencerChoix = false;
+				}
+				
 				break;
 
 			case '^':
 				cout << "Entrer un nombre : ";
 				cin >> nombre;
-				resultat = nombre; // A FAIRE
+				resultat = nombre; 
 				doitRecommencerChoix = false;
 				break;
 
@@ -159,7 +220,7 @@ int main()
 				{
 					// *** Partie else – nombre est valide ***
 					// TODO: Chaine n’a pas pu être convertie en nombre
-					cout << "Erreur!";
+					cout << "Erreur!\n";
 					doitRecommencerChoix = true;
 				}
 
@@ -169,3 +230,4 @@ int main()
 		} // while recommencer choix
 	} // while menu principal
 } // main
+
