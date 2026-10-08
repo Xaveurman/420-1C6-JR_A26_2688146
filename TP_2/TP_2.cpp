@@ -20,7 +20,8 @@ int main()
 	double nombre = 0;
 	double resultat = 0;
 	string message = "";
-	double ancienResultat;
+	double ancienResultat = 0;
+	string symbole = "";
 
 	while (resultat != 'q')
 	{
@@ -30,8 +31,8 @@ int main()
 		cout << "*           Par Votre Xavier Blanchette (2688146)         *\n";
 		cout << "***********************************************************\n";
 		
-		cout << format("Opération :   {} = \n\n", nombre);
-		cout << format("Résultat : {} \n\n", resultat);
+		cout << format("Opération : {} {} {} = \n\n",ancienResultat, symbole,nombre);
+		cout << format("Résultat : {} \n\n",resultat);
 
 		cout << "+) Addition\n";
 		cout << "-) Soustraction\n";
@@ -46,7 +47,7 @@ int main()
 		cout << "t) Triangle\n\n";
 
 		cout << "q) Quitter\n\n";
-		message == "";
+		message = "";
 
 		bool doitRecommencerChoix = true;
 		while (doitRecommencerChoix == true) //
@@ -74,7 +75,6 @@ int main()
 				cout << "Entrer un nombre : ";
 				cin >> nombre;
 				
-				
 				while (cin.fail()) //true => erreur de lecture
 				{
 					cin.clear(); // cin.fail() = false
@@ -87,9 +87,12 @@ int main()
 				}
 
 				// Calculer le nouveau résultat avec le nombre valide
-				
-				resultat = ancienResultat;
+				symbole = '+';
+
+				ancienResultat = resultat ;
 				resultat += nombre;
+
+			
 
 				doitRecommencerChoix = false;
 				break;
@@ -107,6 +110,9 @@ int main()
 					cout << "Entrer un nombre : ";
 					cin >> nombre;
 				}
+				symbole = '-';
+
+				ancienResultat = resultat;
 				resultat -= nombre;
 				doitRecommencerChoix = false;
 				break;
@@ -124,6 +130,9 @@ int main()
 					cout << "Entrer un nombre : ";
 					cin >> nombre;
 				}
+				symbole = '*';
+
+				ancienResultat = resultat;
 				resultat *= nombre;
 				doitRecommencerChoix = false;
 				break;
@@ -141,13 +150,15 @@ int main()
 					cin >> nombre;
 				}
 				cin >> nombre;
-				if (nombre == 0)
+				if (nombre == 0 || resultat == 0)
 				{
+					symbole = '/';
 					cout << "Erreur\n";
-					doitRecommencerChoix = false;
+					doitRecommencerChoix = true;
 				}
 				else
-				{
+				{					
+					ancienResultat = resultat;
 				resultat /= nombre;
 				doitRecommencerChoix = false;
 				}
@@ -173,8 +184,19 @@ int main()
 
 			case 'r':
 			case 'R':
-				doitRecommencerChoix = false;
-				break;
+			{
+				double hauteur = 0;
+				cout << "Entrer une hauteur : ";
+				cin >> hauteur;
+
+				double largeur = 0;
+				cout << "Entrer une largeur : ";
+				cin >> largeur;
+
+				resultat = hauteur * largeur;
+					doitRecommencerChoix = false;
+			}
+			break;
 
 			case 't':
 			case 'T':
