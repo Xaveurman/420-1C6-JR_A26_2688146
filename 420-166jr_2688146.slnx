@@ -18,6 +18,7 @@
   <Project Path="cours15_bouclesImbriques/cours15_bouclesImbriques.vcxproj" Id="c4ca7481-cd96-4948-a796-3b93175e18f9" />
   <Project Path="cours16/cours16.vcxproj" Id="b1402de9-e577-4f91-82bd-1727f57e05d2" />
   <Project Path="cours24_FichierEnTete/cours24_FichierEnTete.vcxproj" Id="c75da4e1-541f-4406-b801-e951fe8ea519" />
+  <Project Path="Cours25_References/Cours25_References.vcxproj" Id="a6f9f764-f0a6-46d8-aac8-e92080a2d1be" />
   <Project Path="cours_13/cours_13.vcxproj" Id="63e0660c-e357-4ea7-942f-a0942a4d6a79" />
   <Project Path="devoir 07/devoir 07.vcxproj" Id="ef2833c0-5405-4b29-98f4-84f7ffa3d54a" />
   <Project Path="devoir cours 13/devoir cours 13.vcxproj" Id="73809121-10e8-4526-8f50-d036c8fcc284" />
