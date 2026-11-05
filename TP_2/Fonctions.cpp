@@ -32,6 +32,13 @@ void afficherMenu(string& message)
 	cout << "r) Rectangle\n";
 	cout << "t) Triangle\n\n";
 
+	cout << "p) Prochain nombre premier	(nouveau)\n";
+	cout << "d) Diviseurs			(nouveau)\n";
+	cout << "i) Inverser nombre		(nouveau)\n";
+	cout << "c) Configurer la seed		(nouveau)\n";
+	cout << "l) Lancer de des		(nouveau)\n\n";
+
+
 	cout << "q) Quitter\n\n";
 
 
@@ -372,11 +379,114 @@ double calculeSerieTaylor(double resultat, string& message)
 	}
 	return resultat;
 }
-void calculeRectangle()
+double calculeRectangleTriangle(double resultat, string& message, char& choixMenu)
 {
+	// Lire la hauteur de la forme a la Console
+	double hauteur = 0;
+	while (hauteur <= 0)
+	{
+		cout << "Entrer une hauteur : ";
+		cin >> hauteur;
+
+		if (cin.fail())
+		{
+			cout << format("Erreur : hauteur doit etre un nombre a virgule !\n");
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			continue;
+		}
+
+		if (hauteur <= 0)
+			cout << format("Erreur : hauteur doit etre plus grand que 0 !\n");
+	}
+
+	// Lire la largeur a la Console
+	double largeur = 0;
+	if (choixMenu == 'r')
+
+	{
+		while (largeur <= 0)
+		{
+			cout << "Entrer une largeur : ";
+			cin >> largeur;
+
+			if (cin.fail())
+			{
+				cout << format("Erreur : largeur doit etre un nombre a virgule !\n");
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+				continue;
+			}
+
+			if (largeur <= 0)
+				cout << format("Erreur : largeur doit etre plus grand que 0 !\n");
+		}
+	}
+	else
+	{
+		// Assigner pour un triangle rectangle isocele hauteur et largeur a la meme valeur
+		largeur = hauteur;
+	}
+
+	switch (choixMenu)
+	{
+	case 'r':
+	{
+		// Afficher le rectangle
+		for (int ligne = 0; ligne < hauteur; ligne++)
+		{
+			for (int symbole = 0; symbole < largeur; symbole++)
+			{
+				// Afficher aussi un espace car les lignes espacement des lignes est plus que l'espacement des caracteres
+				cout << "*";
+				cout << " ";
+			}
+
+			cout << "\n";
+		}
+
+		double aire = hauteur * largeur;
+		double perimetre = hauteur * 2 + largeur * 2;
+
+		cout << "\n";
+		cout << format("Aire      : {:.3f}\n", aire);
+		cout << format("Perimetre : {:.3f}\n", perimetre);
+		cout << "\n";
+	}
+	break;
+
+	case 't':
+	{
+		// Afficher le triangle rectangle
+		for (int ligne = 0; ligne < hauteur; ligne++)
+		{
+			// Toujours arrondir vers le haut le nombre de symboles a afficher
+			int nombreSymboles = ligne + 1;
+
+			// Afficher les caracteres pour la ligne selon le pourcentage de la largeur
+			for (int symbole = 0; symbole < nombreSymboles; symbole++)
+			{
+				// Afficher aussi un espace car les lignes espacement des lignes est plus que l'espacement des caracteres
+				cout << SYMBOLE_FORMES;
+				cout << " ";
+			}
+
+			cout << "\n";
+		}
+
+		double aire = (hauteur * largeur) / 2;
+		double hypothenuse = sqrt(hauteur * hauteur + largeur * largeur);
+		double perimetre = hauteur + largeur + hypothenuse;
+
+		cout << "\n";
+		cout << format("Aire       : {:.3f}\n", aire);
+		cout << format("Hypotenuse : {:.3f}\n", hypothenuse);
+		cout << format("Perimetre  : {:.3f}\n", perimetre);
+		cout << "\n";
+		return resultat;
+	}
+
 }
-void calculeTriangle()
-{
 }
 void defaultErreur(bool doitRecommencerChoix, string chaine)
 {

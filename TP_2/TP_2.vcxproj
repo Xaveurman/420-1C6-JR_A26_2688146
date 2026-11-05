@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Fonctions.cpp" />
+    <ClCompile Include="OperationNouveau.cpp" />
     <ClCompile Include="TP_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constantes.h" />
     <ClInclude Include="Fonctions.h" />
+    <ClInclude Include="OperationNouveau.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
