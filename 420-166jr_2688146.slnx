@@ -3,6 +3,8 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
+  <Project Path="c32 devoir/c32 devoir.vcxproj" Id="b533589c-eac6-4f4e-8ce1-91ff25d31f7b" />
+  <Project Path="c32/c32.vcxproj" Id="4f7f86a2-7011-417a-b5d5-b081879283db" />
   <Project Path="cours 08/cours 08.vcxproj" Id="15341e6a-f932-4a4c-bece-5a96391ea419" />
   <Project Path="cours 23/cours 23.vcxproj" Id="68ea22fb-7d38-4f87-a561-3f0e63c4eafe" />
   <Project Path="cours 26 refactorisation/cours 26 refactorisation.vcxproj" Id="8669aefa-6dff-42e7-a26c-f6dde6fe6e8f" />
