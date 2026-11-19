@@ -338,10 +338,19 @@ int main()
 		string chaine = "Bonjour Tout Le Monde";
 
 		// TODO: Créer 2 copies de la chaîne et transformer en minuscules et en majuscules avec 'tolower()' et 'toupper()'
-		string chaineMinuscules;
+		string chaineMinuscules = chaine;
 
+		for (int i = 0; i < chaineMinuscules.size(); i++)
+		{
+			chaineMinuscules[i] = tolower(chaineMinuscules[i]);
+		}
 
-		string chaineMajuscules;
+		string chaineMajuscules = chaine;
+
+		for (int i = 0; i < chaineMajuscules.size(); i++)
+		{
+			chaineMajuscules[i] = toupper(chaineMajuscules[i]);
+		}
 
 
 		cout << format("Chaine originale : '{}'\n", chaine);
