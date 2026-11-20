@@ -10,8 +10,11 @@
 
 using namespace std;
 
+
+
 void afficherChaineParCopie(string chaine);
 void afficherChaineParReference(string& chaine);
+
 
 int main()
 {
