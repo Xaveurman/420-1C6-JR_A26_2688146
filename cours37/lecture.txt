@@ -1,0 +1,3 @@
+Alice Smith,alice.smith@exemple.com,5551234567
+Bob Johnson,bob.j@exemple.com,5559876543
+Charlie Brown,charlie.b@exemple.com,5555555555
