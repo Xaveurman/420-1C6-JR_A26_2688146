@@ -39,6 +39,7 @@
   <Project Path="devoir05/devoir05.vcxproj" Id="b6610d1c-c2b6-465b-b577-dd1756610843" />
   <Project Path="devoir06/devoir06.vcxproj" Id="96cdeb02-83d2-484a-92d7-19d0ee1b302b" />
   <Project Path="Imprimante TP/Imprimante TP.vcxproj" Id="4c6023e7-2a10-4829-91f9-cdcb15786e20" />
+  <Project Path="TP 4/TP 4.vcxproj" Id="bfcd31ca-3d64-4b62-a3f5-e8e6208d3628" />
   <Project Path="TP3/TP3.vcxproj" Id="b5af12c3-09a0-4857-b439-f40c74f43e27" />
   <Project Path="TP_2/TP_2.vcxproj" Id="68e4d176-90f7-40bc-9d9a-e345cd6bbc93" />
 </Solution>
